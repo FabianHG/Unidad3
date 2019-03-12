@@ -70,6 +70,12 @@
     <Compile Include="vista\FormaChampeonship.Designer.cs">
       <DependentUpon>FormaChampeonship.cs</DependentUpon>
     </Compile>
+    <Compile Include="vista\FormaEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormaEstudiante.Designer.cs">
+      <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="vista\FormaChampeonship.resx">
       <DependentUpon>FormaChampeonship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\FormaEstudiante.resx">
+      <DependentUpon>FormaEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
