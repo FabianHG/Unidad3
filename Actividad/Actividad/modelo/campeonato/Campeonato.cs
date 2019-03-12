@@ -30,9 +30,55 @@ namespace Actividad.modelo.campeonato
         private List<Jornada> _jornada = new List<Jornada>();
 
         //Metodos Get y Set
-        public int Id { get; set; }
-        public int Nombre { get; set; }
-        public int FechaInicio { get; set; }
-        public int FechaFin { get; set; }
+        public int Id
+        {
+            get
+            {
+                return this._id;
+            }
+            set
+            {
+                if (value > 0)
+                {
+                    this._id = value;
+                }
+            }
+        }
+        public string Nombre {
+            get
+            {
+                return this._nombre;
+            }
+            set
+            {
+                if (value != null || (value.Length > 2 && value.Length <= 50))
+                {
+                    this._nombre = value;
+                }
+            }
+        }
+        public DateTime FechaInicio {
+            get { return this._fechaInicio; }
+            set
+            {
+                if (value > DateTime.Today && _fechaInicio < _fechaFin)
+                {
+                    this._fechaInicio = value;
+                }
+            }
+        }
+        public DateTime FechaFin {
+            get { return this._fechaFin; }
+            set
+            {
+                DateTime fin = new DateTime(2019, 4, 8);
+                if (value <= fin)
+                {
+                    this._fechaFin = value;
+                }
+            }
+        }
+
+
     }
 }
