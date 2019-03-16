@@ -56,12 +56,6 @@
     <Compile Include="modelo\Carrera.cs" />
     <Compile Include="modelo\Estudiante.cs" />
     <Compile Include="modelo\Facilitador.cs" />
-    <Compile Include="vista\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vista\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="vista\FormaChampeonship.cs">
@@ -73,8 +67,20 @@
     <Compile Include="vista\FormaEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vista\FormaEstudiante.Designer.cs">
+    <Compile Include="vista\FormaEstudiante.designer.cs">
       <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\FormaJornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\FormaJornada.Designer.cs">
+      <DependentUpon>FormaJornada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vista\Proyecto\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vista\Proyecto\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,12 +90,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="vista\FormaChampeonship.resx">
       <DependentUpon>FormaChampeonship.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\FormaEstudiante.resx">
       <DependentUpon>FormaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\FormaJornada.resx">
+      <DependentUpon>FormaJornada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vista\Proyecto\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -104,7 +117,33 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="modelo\Proyecto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

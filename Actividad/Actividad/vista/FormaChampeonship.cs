@@ -66,5 +66,10 @@ namespace Actividad.vista
         {
 
         }
+
+        private void labelTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

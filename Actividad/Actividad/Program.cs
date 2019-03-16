@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Actividad.vista;
-
+using Actividades.vista;
 namespace Actividad
 {
     static class Program
@@ -17,7 +17,7 @@ namespace Actividad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormaChampeonship());
+            Application.Run(new FormaJornada());
         }
     }
 }

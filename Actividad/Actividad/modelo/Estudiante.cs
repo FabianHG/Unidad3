@@ -4,27 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unidad3.modelo
+namespace Actividad.modelo
 {
     class Estudiante
     {
-        public byte edad;
-        public char genero;
-        public string nombre;
-        public int numcontrol;
-    
-        public Estudiante()
-        {
-
-        }
-        public void Estudiar(string tema)
-        {
-           return;
-        }
-        public void HacerTarea(string tema)
-        {
-            return;
-        }
-
+        public long NumeroControl { get; set; }
+        public string Nombre { get; set; }
+        public byte Edad { get; set; }
+        public char Genero { get; set; }
     }
+    
+    
 }
