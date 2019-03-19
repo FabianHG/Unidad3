@@ -54,6 +54,11 @@
     <Compile Include="modelo\campeonato\Jugador.cs" />
     <Compile Include="modelo\campeonato\Partido.cs" />
     <Compile Include="modelo\Carrera.cs" />
+    <Compile Include="modelo\cinema\Cliente.cs" />
+    <Compile Include="modelo\cinema\Empleado.cs" />
+    <Compile Include="modelo\cinema\MockObjetos.cs" />
+    <Compile Include="modelo\cinema\Persona.cs" />
+    <Compile Include="modelo\cinema\Sala.cs" />
     <Compile Include="modelo\Estudiante.cs" />
     <Compile Include="modelo\Facilitador.cs" />
     <Compile Include="Program.cs" />
