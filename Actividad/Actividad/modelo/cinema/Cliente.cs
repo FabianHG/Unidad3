@@ -12,5 +12,11 @@ namespace Actividad.modelo.cinema
         {
             _nombre = "Pedro";
         }
+
+        public Cliente(string nombre, string usuario)
+        {
+            _nombre = nombre;
+            _usuario = usuario;
+        }
     }
 }
