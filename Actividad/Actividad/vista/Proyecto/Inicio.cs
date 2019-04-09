@@ -16,5 +16,52 @@ namespace Actividad.vista.Proyecto
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Actividad.Program.formaInicio.Show();
+            Hide();
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            Actividad.Program.formaPeliculas.Show();
+            Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Actividad.Program.formaSeries.Show();
+            Hide();
+        }
+
+        private void labelPeliculas_Click(object sender, EventArgs e)
+        {
+            Actividad.Program.formaPeliculas.Show();
+            Hide();
+        }
+
+        private void labelSeries_Click(object sender, EventArgs e)
+        {
+            Actividad.Program.formaSeries.Show();
+            Hide();
+        }
+        
+        private void Agregar_Click(object sender, EventArgs e)
+        {
+            Actividad.Program.formaAgregar.Show();
+            Hide();
+        }
+
+        private void pictureBoxMusica_Click(object sender, EventArgs e)
+        {
+            Actividad.Program.formaMusica.Show();
+            Hide();
+        }
     }
 }

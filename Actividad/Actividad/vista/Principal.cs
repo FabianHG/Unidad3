@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Actividad.vista
 {
-    public partial class FormaJornada : Form
+    public partial class Principal : Form
     {
-        public FormaJornada()
+        public Principal()
         {
             InitializeComponent();
         }
@@ -33,6 +33,22 @@ namespace Actividad.vista
         }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCampeonato_Click(object sender, EventArgs e)
+        {
+            Actividad.Program.formaCampeonato.Show(); // Mostrar ventana
+            Hide(); // Oculta la ventana actual
+        }
+
+        private void buttonCampeonato_MouseLeave(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
         {
 
         }

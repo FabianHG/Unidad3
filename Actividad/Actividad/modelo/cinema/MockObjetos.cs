@@ -12,7 +12,7 @@ namespace Actividad.modelo.cinema
         {
             Sala[] colSalas = new Sala[5]; // Tamaño de la sala
             colSalas[0] = new Sala(); // Defaut
-            colSalas[1] = new Sala(200);// Capacidad - opcion 2
+            colSalas[1] = new Sala(200, "Sala");// Capacidad - opcion 2
             colSalas[2] = new Sala(200, "Sala A");// Capacidad y nombre opcion 3
             colSalas[3] = new Sala(200, "Sala B");
             colSalas[4] = new Sala(200, "Sala C");

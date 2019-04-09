@@ -25,6 +25,13 @@ namespace Actividad.modelo.campeonato
                 _jornada.Add(j);
             }
         }
+        public Campeonato(string nombre, DateTime fechainicio, DateTime fechafin)
+        {
+            _nombre = nombre;
+            _fechaInicio = fechainicio;
+            _fechaFin = fechafin;
+        }
+
 
         //Resultado de la asociacion entre el campeonato y jornanda
         private List<Jornada> _jornada = new List<Jornada>();
@@ -61,7 +68,7 @@ namespace Actividad.modelo.campeonato
             get { return this._fechaInicio; }
             set
             {
-                if (value > DateTime.Today && _fechaInicio < _fechaFin)
+                if (value >= DateTime.Today)
                 {
                     this._fechaInicio = value;
                 }
@@ -71,14 +78,16 @@ namespace Actividad.modelo.campeonato
             get { return this._fechaFin; }
             set
             {
-                DateTime fin = new DateTime(2019, 4, 8);
-                if (value <= fin)
+                if (value > _fechaInicio)
                 {
                     this._fechaFin = value;
                 }
             }
         }
 
-
+        public override string ToString()
+        {
+            return _id + " | " + _nombre + " | " + _fechaInicio.ToString("dd/MM/yyyy") + " | " + _fechaFin.ToString("dd/MM/yyyy") + "\n";
+        }
     }
 }
