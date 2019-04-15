@@ -31,7 +31,6 @@
             this.buttonSalir = new System.Windows.Forms.Button();
             this.labelPeliculas = new System.Windows.Forms.Label();
             this.labelSeries = new System.Windows.Forms.Label();
-            this.Agregar = new System.Windows.Forms.Button();
             this.pictureBoxMusica = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,11 +45,11 @@
             // 
             this.buttonSalir.BackColor = System.Drawing.Color.Red;
             this.buttonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSalir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonSalir.Location = new System.Drawing.Point(574, 424);
+            this.buttonSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonSalir.Location = new System.Drawing.Point(424, 366);
             this.buttonSalir.Name = "buttonSalir";
-            this.buttonSalir.Size = new System.Drawing.Size(132, 37);
+            this.buttonSalir.Size = new System.Drawing.Size(182, 52);
             this.buttonSalir.TabIndex = 5;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = false;
@@ -84,24 +83,10 @@
             this.labelSeries.Text = "Series";
             this.labelSeries.Click += new System.EventHandler(this.labelSeries_Click);
             // 
-            // Agregar
-            // 
-            this.Agregar.BackColor = System.Drawing.Color.DarkOrange;
-            this.Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Agregar.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Agregar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Agregar.Location = new System.Drawing.Point(443, 111);
-            this.Agregar.Name = "Agregar";
-            this.Agregar.Size = new System.Drawing.Size(158, 44);
-            this.Agregar.TabIndex = 10;
-            this.Agregar.Text = "Agregar";
-            this.Agregar.UseVisualStyleBackColor = false;
-            this.Agregar.Click += new System.EventHandler(this.Agregar_Click);
-            // 
             // pictureBoxMusica
             // 
             this.pictureBoxMusica.Image = global::Actividad.Properties.Resources.musica;
-            this.pictureBoxMusica.Location = new System.Drawing.Point(354, 177);
+            this.pictureBoxMusica.Location = new System.Drawing.Point(361, 111);
             this.pictureBoxMusica.Name = "pictureBoxMusica";
             this.pictureBoxMusica.Size = new System.Drawing.Size(318, 217);
             this.pictureBoxMusica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -151,7 +136,6 @@
             this.ClientSize = new System.Drawing.Size(718, 473);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBoxMusica);
-            this.Controls.Add(this.Agregar);
             this.Controls.Add(this.labelSeries);
             this.Controls.Add(this.labelPeliculas);
             this.Controls.Add(this.buttonSalir);
@@ -184,7 +168,6 @@
         private System.Windows.Forms.Button buttonSalir;
         private System.Windows.Forms.Label labelPeliculas;
         private System.Windows.Forms.Label labelSeries;
-        private System.Windows.Forms.Button Agregar;
         private System.Windows.Forms.PictureBox pictureBoxMusica;
     }
 }

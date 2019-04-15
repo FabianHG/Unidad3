@@ -66,9 +66,9 @@
     <Compile Include="modelo\cinema\Sala.cs" />
     <Compile Include="modelo\Estudiante.cs" />
     <Compile Include="modelo\Facilitador.cs" />
-    <Compile Include="modelo\Proyecto\Categoria.cs" />
+    <Compile Include="modelo\Proyecto\MusicaClase.cs" />
     <Compile Include="modelo\Proyecto\Pelicula.cs" />
-    <Compile Include="modelo\Proyecto\Reproductor.cs" />
+    <Compile Include="modelo\Proyecto\ReproductorClase.cs" />
     <Compile Include="modelo\Proyecto\Serie.cs" />
     <Compile Include="modelo\Proyecto\Video.cs" />
     <Compile Include="Program.cs" />
@@ -91,12 +91,6 @@
     <Compile Include="vista\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="vista\Proyecto\Agregar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="vista\Proyecto\Agregar.Designer.cs">
-      <DependentUpon>Agregar.cs</DependentUpon>
-    </Compile>
     <Compile Include="vista\Proyecto\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,11 +109,11 @@
     <Compile Include="vista\Proyecto\Peliculas.Designer.cs">
       <DependentUpon>Peliculas.cs</DependentUpon>
     </Compile>
-    <Compile Include="vista\Proyecto\Reproductor.cs">
+    <Compile Include="vista\Proyecto\Visualizador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="vista\Proyecto\Reproductor.Designer.cs">
-      <DependentUpon>Reproductor.cs</DependentUpon>
+    <Compile Include="vista\Proyecto\Visualizador.Designer.cs">
+      <DependentUpon>Visualizador.cs</DependentUpon>
     </Compile>
     <Compile Include="vista\Proyecto\Series.cs">
       <SubType>Form</SubType>
@@ -146,9 +140,6 @@
     <EmbeddedResource Include="vista\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vista\Proyecto\Agregar.resx">
-      <DependentUpon>Agregar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="vista\Proyecto\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,8 +149,8 @@
     <EmbeddedResource Include="vista\Proyecto\Peliculas.resx">
       <DependentUpon>Peliculas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="vista\Proyecto\Reproductor.resx">
-      <DependentUpon>Reproductor.cs</DependentUpon>
+    <EmbeddedResource Include="vista\Proyecto\Visualizador.resx">
+      <DependentUpon>Visualizador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vista\Proyecto\Series.resx">
       <DependentUpon>Series.cs</DependentUpon>
@@ -218,6 +209,14 @@
     <None Include="Resources\exit %281%291.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\pausa.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\tuesday.jpg" />
+    <None Include="Resources\paradise.jpg" />
+    <None Include="Resources\fondo.jpg" />
+    <None Include="Resources\Pokemon-logo.png" />
+    <None Include="Resources\South Park.png" />
     <None Include="Resources\musica.jpeg" />
     <None Include="Resources\star.jpeg" />
     <None Include="Resources\sicario.jpeg" />
@@ -236,6 +235,9 @@
     <None Include="Resources\advengers.jpg" />
     <None Include="Resources\conjuro2.jpeg" />
     <None Include="Resources\batman.jpg" />
+    <None Include="Resources\blame.jpg" />
+    <None Include="Resources\como pagarte.jpg" />
+    <None Include="Resources\atras.png" />
     <Content Include="Resources\exit.png" />
     <None Include="Resources\leyendas.jpg" />
     <None Include="Resources\Titulo.JPG" />

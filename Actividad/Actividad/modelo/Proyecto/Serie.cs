@@ -12,16 +12,16 @@ namespace Actividad.modelo.Proyecto
         private byte _temporada;
         private byte _numeroCapitulo;
         private char _clasificacion;
-        private string _protagonista;
+        private string _ruta;
         
         public Serie()
         {
 
         }
-        public Serie(byte temporada, byte numeroCap)
+        public Serie(int id, string ruta)
         {
-            temporada = _temporada;
-            numeroCap = _numeroCapitulo;
+            _id = id;
+            _ruta = ruta;
         }
 
         public string NombreSerie
@@ -51,13 +51,13 @@ namespace Actividad.modelo.Proyecto
                     _numeroCapitulo = value;
             }
         }
-        public string Protagonista
+        public string Ruta
         {
-            get { return _protagonista; }
+            get { return _ruta; }
             set
             {
-                if (value.Length >= 3 && value.Length <= 50)
-                    _protagonista = value;
+                if (value.Length > 0)
+                    _ruta = value;
             }
         }
 

@@ -51,13 +51,7 @@ namespace Actividad.vista.Proyecto
             Actividad.Program.formaSeries.Show();
             Hide();
         }
-        
-        private void Agregar_Click(object sender, EventArgs e)
-        {
-            Actividad.Program.formaAgregar.Show();
-            Hide();
-        }
-
+   
         private void pictureBoxMusica_Click(object sender, EventArgs e)
         {
             Actividad.Program.formaMusica.Show();

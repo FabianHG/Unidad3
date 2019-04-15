@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Actividad.modelo.Proyecto
 {
-    class Reproductor
+    class ReproductorClase
     {
         private int _id;
         private string _nombre;
@@ -14,10 +14,10 @@ namespace Actividad.modelo.Proyecto
         private DateTime _fechaEjecucion;
         private DateTime _fechaTermino;
 
-        public Reproductor()
+        public ReproductorClase()
         {
         }
-        public Reproductor(string nombre)
+        public ReproductorClase(string nombre)
         {
             nombre = _nombre;
         }

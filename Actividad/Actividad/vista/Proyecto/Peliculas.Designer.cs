@@ -30,7 +30,7 @@
         {
             this.labelDescripcionPeliculas = new System.Windows.Forms.Label();
             this.pictureBoxStar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSicario = new System.Windows.Forms.PictureBox();
             this.pictureBoxLiga = new System.Windows.Forms.PictureBox();
             this.pictureBoxIlucionistas = new System.Windows.Forms.PictureBox();
             this.pictureBoxGuardianes = new System.Windows.Forms.PictureBox();
@@ -42,7 +42,7 @@
             this.pictureBoxHome = new System.Windows.Forms.PictureBox();
             this.pictureBoxPeliculas = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSicario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiga)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIlucionistas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGuardianes)).BeginInit();
@@ -75,18 +75,20 @@
             this.pictureBoxStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxStar.TabIndex = 13;
             this.pictureBoxStar.TabStop = false;
+            this.pictureBoxStar.Tag = "10";
             this.pictureBoxStar.Click += new System.EventHandler(this.pictureBoxStar_Click);
             // 
-            // pictureBox1
+            // pictureBoxSicario
             // 
-            this.pictureBox1.Image = global::Actividad.Properties.Resources.sicario;
-            this.pictureBox1.Location = new System.Drawing.Point(138, 103);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(113, 184);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBoxSicario.Image = global::Actividad.Properties.Resources.sicario;
+            this.pictureBoxSicario.Location = new System.Drawing.Point(138, 103);
+            this.pictureBoxSicario.Name = "pictureBoxSicario";
+            this.pictureBoxSicario.Size = new System.Drawing.Size(113, 184);
+            this.pictureBoxSicario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSicario.TabIndex = 12;
+            this.pictureBoxSicario.TabStop = false;
+            this.pictureBoxSicario.Tag = "9";
+            this.pictureBoxSicario.Click += new System.EventHandler(this.pictureBoxSicario_Click);
             // 
             // pictureBoxLiga
             // 
@@ -97,6 +99,8 @@
             this.pictureBoxLiga.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLiga.TabIndex = 11;
             this.pictureBoxLiga.TabStop = false;
+            this.pictureBoxLiga.Tag = "7";
+            this.pictureBoxLiga.Click += new System.EventHandler(this.pictureBoxLiga_Click);
             // 
             // pictureBoxIlucionistas
             // 
@@ -107,6 +111,8 @@
             this.pictureBoxIlucionistas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxIlucionistas.TabIndex = 10;
             this.pictureBoxIlucionistas.TabStop = false;
+            this.pictureBoxIlucionistas.Tag = "4";
+            this.pictureBoxIlucionistas.Click += new System.EventHandler(this.pictureBoxIlucionistas_Click);
             // 
             // pictureBoxGuardianes
             // 
@@ -117,6 +123,8 @@
             this.pictureBoxGuardianes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxGuardianes.TabIndex = 9;
             this.pictureBoxGuardianes.TabStop = false;
+            this.pictureBoxGuardianes.Tag = "3";
+            this.pictureBoxGuardianes.Click += new System.EventHandler(this.pictureBoxGuardianes_Click);
             // 
             // pictureBoxBatman
             // 
@@ -127,6 +135,8 @@
             this.pictureBoxBatman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxBatman.TabIndex = 8;
             this.pictureBoxBatman.TabStop = false;
+            this.pictureBoxBatman.Tag = "5";
+            this.pictureBoxBatman.Click += new System.EventHandler(this.pictureBoxBatman_Click);
             // 
             // pictureBoxLeyendas
             // 
@@ -137,6 +147,8 @@
             this.pictureBoxLeyendas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLeyendas.TabIndex = 7;
             this.pictureBoxLeyendas.TabStop = false;
+            this.pictureBoxLeyendas.Tag = "6";
+            this.pictureBoxLeyendas.Click += new System.EventHandler(this.pictureBoxLeyendas_Click);
             // 
             // pictureBoxAvengers
             // 
@@ -147,6 +159,8 @@
             this.pictureBoxAvengers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxAvengers.TabIndex = 5;
             this.pictureBoxAvengers.TabStop = false;
+            this.pictureBoxAvengers.Tag = "2";
+            this.pictureBoxAvengers.Click += new System.EventHandler(this.pictureBoxAvengers_Click);
             // 
             // pictureBoxPremonicion
             // 
@@ -157,6 +171,8 @@
             this.pictureBoxPremonicion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxPremonicion.TabIndex = 4;
             this.pictureBoxPremonicion.TabStop = false;
+            this.pictureBoxPremonicion.Tag = "1";
+            this.pictureBoxPremonicion.Click += new System.EventHandler(this.pictureBoxPremonicion_Click);
             // 
             // pictureBoxMadmax
             // 
@@ -167,6 +183,7 @@
             this.pictureBoxMadmax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxMadmax.TabIndex = 3;
             this.pictureBoxMadmax.TabStop = false;
+            this.pictureBoxMadmax.Tag = "8";
             this.pictureBoxMadmax.Click += new System.EventHandler(this.pictureBoxMadmax_Click);
             // 
             // pictureBoxHome
@@ -197,7 +214,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(720, 480);
             this.Controls.Add(this.pictureBoxStar);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxSicario);
             this.Controls.Add(this.pictureBoxLiga);
             this.Controls.Add(this.pictureBoxIlucionistas);
             this.Controls.Add(this.pictureBoxGuardianes);
@@ -213,8 +230,9 @@
             this.Name = "Peliculas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Peliculas";
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSicario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLiga)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIlucionistas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGuardianes)).EndInit();
@@ -243,7 +261,7 @@
         private System.Windows.Forms.PictureBox pictureBoxGuardianes;
         private System.Windows.Forms.PictureBox pictureBoxIlucionistas;
         private System.Windows.Forms.PictureBox pictureBoxLiga;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxSicario;
         private System.Windows.Forms.PictureBox pictureBoxStar;
     }
 }

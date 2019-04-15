@@ -11,17 +11,17 @@ namespace Actividad.modelo.Proyecto
         private char _clasificacion;
         private string _director;
         private DateTime _estreno;
-        private string _actores;
+        private string _ruta;
         private string _resumen;
 
         public Pelicula()
         {
 
         }
-        public Pelicula(char clasificacion, string resumen)
+        public Pelicula(int id, string ruta)
         {
-            clasificacion = _clasificacion;
-            resumen = _resumen;
+            _id = id;
+            _ruta = ruta;
         }
 
         public char Clasificacion
@@ -51,13 +51,12 @@ namespace Actividad.modelo.Proyecto
                     _estreno = value;
             }
         }
-        public string Actores
+        public string Ruta
         {
-            get { return _actores; }
+            get { return _ruta; }
             set
             {
-                if (value.Length >= 3 && value.Length <= 50)
-                    _actores = value;
+              
             }
         }
         public string Resumen

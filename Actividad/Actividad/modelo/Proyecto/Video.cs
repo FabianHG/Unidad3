@@ -8,11 +8,11 @@ namespace Actividad.modelo.Proyecto
 {
     class Video
     {
-        private int _id;
-        private string _nombre;
-        private int _duracion;
-        private DateTime _fecha;
-        private bool _estaDisponible;
+        protected int _id;
+        protected string _nombre;
+        protected int _duracion;
+        protected DateTime _fecha;
+        protected bool _estaDisponible;
 
         public Video()
         {
